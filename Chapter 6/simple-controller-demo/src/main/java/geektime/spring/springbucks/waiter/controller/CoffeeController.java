@@ -16,7 +16,7 @@ public class CoffeeController {
     @Autowired
     private CoffeeService coffeeService;
 
-    @GetMapping("/")
+    @GetMapping("/list")
     @ResponseBody
     public List<Coffee> getAll() {
         return coffeeService.getAllCoffee();
